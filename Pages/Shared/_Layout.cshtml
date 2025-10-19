@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Andyteca</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/netflix_de_libros_razor_pages.styles.css" asp-append-version="true" />
+    <!-- Agregar Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body class="text-light">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand text-light" asp-area="" asp-page="/Index">Netflix de libros</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-page="/Index">Inicio</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown">
+                                📚 Biblioteca
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-page="/Libros">Todos los Libros</a></li>
+                                <li><a class="dropdown-item" asp-page="/Generos">Por Géneros</a></li>
+                                <li><a class="dropdown-item" asp-page="/Autores">Autores</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-page="/MisLibros">📖 Mi Biblioteca</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-page="/ListasLectura">⭐ Listas de Lectura</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-page="/Resenias">💬 Reseñas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-page="/Recomendaciones">🎯 Recomendaciones</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-page="/Contacto">📞 Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-light bg-dark py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    &copy; 2025 - Netflix de libros - 
+                    <a class="text-light" asp-area="" asp-page="/Privacy">Política de Privacidad</a>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <span class="text-light">📚 Tu biblioteca digital favorita</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

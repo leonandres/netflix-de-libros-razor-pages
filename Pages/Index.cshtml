@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<section class = "seccion-principal mb-5">
+    <div class = "container-fluid">
+        Libros
+    </div>
+</section>
+
+<h2 class="section-title">🎯 Más Vendidos</h2>
+<p>Texto normal <a href="#">enlace de ejemplo</a></p>
+<button class="btn btn-primary">Botón de prueba</button>
+
+<!-- Secciones por categorías -->
+<section class="categorias-section">
+    <div class="container">
+        <!-- Más vendidos -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-title">🎯 Más Vendidos</h2>
+                <div class="libros-grid">
+                    <!-- Grid de libros -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Novedades -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-title">🆕 Novedades</h2>
+                <div class="libros-grid">
+                    <!-- Grid de libros -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Por géneros -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-title">📚 Por Género</h2>
+                <div class="categorias-grid">
+                    <!-- Iconos de géneros -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
