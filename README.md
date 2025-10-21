@@ -23,22 +23,22 @@ markdown
 ## 📦 Estructura del Proyecto
 Pages/ <br>
 ├── Index.cshtml # Página principal <br>
-├── Libros/ # Catálogo de libros
-│ ├── Index.cshtml # Lista de todos los libros
-│ └── Detalle.cshtml # Detalle de libro individual
-├── MisLibros/ # Biblioteca personal
-│ └── Index.cshtml
-├── ListasLectura/ # Gestión de listas
-│ └── Index.cshtml
-├── Resenias/ # Sistema de reseñas
-│ └── Index.cshtml
-├── Recomendaciones/ # Recomendaciones personalizadas
-│ └── Index.cshtml
-├── Generos/ # Libros por género
-│ └── Index.cshtml
-├── Autores/ # Catálogo de autores
-│ └── Index.cshtml
-└── Contacto.cshtml # Formulario de contacto
+├── Libros/ # Catálogo de libros <br>
+│ ├── Index.cshtml # Lista de todos los libros <br>
+│ └── Detalle.cshtml # Detalle de libro individual <br>
+├── MisLibros/ # Biblioteca personal <br>
+│ └── Index.cshtml <br>
+├── ListasLectura/ # Gestión de listas <br>
+│ └── Index.cshtml <br>
+├── Resenias/ # Sistema de reseñas <br>
+│ └── Index.cshtml <br>
+├── Recomendaciones/ # Recomendaciones personalizadas <br>
+│ └── Index.cshtml <br>
+├── Generos/ # Libros por género <br>
+│ └── Index.cshtml <br>
+├── Autores/ # Catálogo de autores <br>
+│ └── Index.cshtml <br>
+└── Contacto.cshtml # Formulario de contacto <br>
 
 ## 🎨 Paleta de Colores
 
