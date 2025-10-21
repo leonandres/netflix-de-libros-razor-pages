@@ -19,6 +19,7 @@ Una plataforma moderna de lectura digital inspirada en Netflix, desarrollada con
 - **Framework**: Razor Pages
 - **Iconos**: Bootstrap Icons
 
+markdown
 ## 📦 Estructura del Proyecto
 Pages/
 ├── Index.cshtml # Página principal
