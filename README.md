@@ -21,8 +21,8 @@ Una plataforma moderna de lectura digital inspirada en Netflix, desarrollada con
 
 markdown
 ## 📦 Estructura del Proyecto
-Pages/
-├── Index.cshtml # Página principal
+Pages/ <br>
+├── Index.cshtml # Página principal <br>
 ├── Libros/ # Catálogo de libros
 │ ├── Index.cshtml # Lista de todos los libros
 │ └── Detalle.cshtml # Detalle de libro individual
